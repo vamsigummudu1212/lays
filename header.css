@@ -1,0 +1,66 @@
+header{
+    display:flex;
+    background-color: black;
+    height: 200px;
+    width: 5000px;
+    margin-right: 100px;
+
+
+}
+nav ul li {
+    display: inline-block;
+    padding: 90px;
+   
+    
+    
+
+
+}
+nav ul li a {
+    padding: 10px;
+    color: rgb(243, 237, 237);
+    text-decoration: none;
+    font-size: large;
+    border-radius: 48%;
+    border: 2px  solid rgb(179, 152, 15);
+    background-color: rgba(247, 9, 9, 0.979);
+    
+
+
+    
+
+}nav{
+    margin-left: 100px;
+}
+.grid{
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+}
+#about{
+    text-align: center;
+    font-size: x-large ;
+    font-style: oblique;
+}
+.mimg{
+     /*height: 200px;
+     width: 200;*/
+     border-radius: 5%;
+}
+.grid1{
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item1{
+    margin:1%;
+}
+.item2{
+    margin:1%;
+}
+.item3{
+    margin:1%;
+}
+.item4{
+    margin:1%;
+}
