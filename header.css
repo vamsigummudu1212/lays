@@ -1,15 +1,27 @@
+body{
+    background-image: url('n.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 header{
     display:flex;
     background-color: black;
     height: 200px;
-    width: 5000px;
-    margin-right: 100px;
+   
+
 
 
 }
+p{
+    font-style: italic;
+    color:  rgba(27, 142, 157, 0.907);
+}
 nav ul li {
     display: inline-block;
-    padding: 90px;
+    padding: 50px;
+    color: aliceblue;
+    margin-top: 50px;
    
     
     
@@ -18,13 +30,14 @@ nav ul li {
 }
 nav ul li a {
     padding: 10px;
-    color: rgb(243, 237, 237);
+    color: rgb(229, 225, 225);
     text-decoration: none;
     font-size: large;
     border-radius: 48%;
     border: 2px  solid rgb(179, 152, 15);
     background-color: rgba(247, 9, 9, 0.979);
     
+
 
 
     
@@ -63,4 +76,38 @@ nav ul li a {
 }
 .item4{
     margin:1%;
+}
+#videos #slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: start;
+  }
+  
+  video {
+    width: 100%;
+    height: 600px;
+  }
+  label
+{    
+    display: block;
+    padding: 10px;
+}
+#videos #move {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    scroll-snap-type: x mandatory; 
+  }
+  form{
+    background-color:rgb(148, 56, 123);
+    color:black;
+    margin:50px 50px 50px 50px;
+    text-align: center;
+}
+#submit{
+padding:10px;
+}
+input[type=submit]:hover {
+    background-color: rgb(14, 14, 14);
+ 
 }
