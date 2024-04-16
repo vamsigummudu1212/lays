@@ -26,15 +26,40 @@
     </nav>
     </header>
     <section id="home">
-        <a href="https://www.lays.com/" target="_blank">
-            <img src="hi.jpg" height="500px" width="500px">
-        </a>
-        <a href="https://www.lays.com/product-category/lays" target="_blank">
-            <img src="hii.jpg" height="500px" width="500px">
-        </a>
-        <a href="https://www.lays.com/where-to-buy" target="_blank">
-            <img src="hiii.jpg" height="500px" width="380px" >
-        </a>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execute Python Program</title>
+</head>
+<body>
+    <h1>Execute Python Program</h1>
+    <button onclick="runProgram()">Run Python Program</button>
+    <button onclick="stopProgram()">Stop Python Program</button>
+
+    <script>
+        function runProgram() {
+            fetch('/run_program', {
+                method: 'POST',
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => console.error('Error:', error));
+        }
+
+        function stopProgram() {
+            fetch('/stop_program', {
+                method: 'POST',
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
+
         
         <section id="menu" >
             
